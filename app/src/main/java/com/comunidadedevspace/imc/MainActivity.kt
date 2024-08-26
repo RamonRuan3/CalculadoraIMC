@@ -1,8 +1,10 @@
 package com.comunidadedevspace.imc
 
+import android.hardware.biometrics.BiometricManager.Strings
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -15,13 +17,30 @@ class MainActivity : AppCompatActivity() {
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
         btnCalcular.setOnClickListener {
-            val peso: Float = edtPeso.text.toString().toFloat()
-            val altura: Float = edtAltura.text.toString().toFloat()
-            val altura02= altura * altura
-            val resultado = peso / altura02
 
-            println(resultado)
+            val pesoStr: String = edtPeso.text.toString()
+            val alturaStr: String = edtAltura.text.toString()
 
+            if (pesoStr == "" || alturaStr == "") {
+                Snackbar
+                    .make(
+                        edtPeso,
+                        "preencha todos os campos",
+                        Snackbar.LENGTH_LONG
+                    )
+                    .show()
+
+            } else {
+
+                val peso = pesoStr.toFloat()
+                val altura = alturaStr.toFloat()
+                val altura02 = altura * altura
+                val resultado = peso / altura02
+
+                println(resultado)
+            }
         }
+
     }
-        }
+}
+
