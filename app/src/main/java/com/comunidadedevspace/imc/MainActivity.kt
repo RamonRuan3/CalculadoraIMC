@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import android.hardware.biometrics.BiometricManager.Strings
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,7 +39,12 @@ class MainActivity : AppCompatActivity() {
                 val altura02 = altura * altura
                 val resultado = peso / altura02
 
-                println(resultado)
+                val intent = Intent(this,ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, resultado)
+                startActivity(intent)
+
+
+                println("Ramon" + resultado)
             }
         }
 
