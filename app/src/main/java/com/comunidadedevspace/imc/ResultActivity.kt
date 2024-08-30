@@ -37,12 +37,12 @@ class ResultActivity : AppCompatActivity() {
         }
 
         val color: Int = when (classificacao) {
-            "MAGREZA" -> Color.parseColor("#FF0000") // Vermelho
-            "NORMAL" -> Color.parseColor("#00FF00") // Verde
-            "SOBREPESO" -> Color.parseColor("#FFFF00") // Amarelo
-            "OBESO" -> Color.parseColor("#FFA500") // Laranja
-            "OBESIDADE GRAVE" -> Color.parseColor("#FF0000") // Vermelho
-            else -> Color.parseColor("#000000") // Preto (caso haja algum erro)
+            "MAGREZA" -> Color.parseColor("#FF0000")
+            "NORMAL" -> Color.parseColor("#00FF00")
+            "SOBREPESO" -> Color.parseColor("#FFFF00")
+            "OBESO" -> Color.parseColor("#FFA500")
+            "OBESIDADE GRAVE" -> Color.parseColor("#FF0000")
+            else -> Color.parseColor("#000000")
         }
         val textView: TextView = findViewById(R.id.tv_classificacao)
         textView.text = classificacao
@@ -50,7 +50,7 @@ class ResultActivity : AppCompatActivity() {
 
 
 
-        println ("Ruan"+ result)
+        println ("RESS"+ result)
 
         }
 
