@@ -1,19 +1,49 @@
 # Calculadora IMC
-Desc
+Descrição
+Este é um aplicativo Android simples desenvolvido em Kotlin que calcula o Índice de Massa Corporal (IMC) com base na altura e peso fornecidos pelo usuário. O IMC é um indicador útil para avaliar se uma pessoa está em um peso saudável em relação à sua altura.
+
+## Funcionalidades
+Entrada de Altura e Peso: O usuário pode inserir sua altura (em metros) e peso (em quilogramas).
+Cálculo do IMC: O aplicativo calcula automaticamente o IMC com base nos valores inseridos.
+Classificação do IMC: Após o cálculo, o IMC é classificado em categorias como Magreza, Normal, Sobrepeso, Obeso, e Obesidade Grave.
+Indicação Visual: Cada classificação recebe uma cor diferente para facilitar a visualização:
+Magreza: Vermelho
+Normal: Verde
+Sobrepeso: Amarelo
+Obeso: Laranja
+Obesidade Grave: Vermelho
+
+## Tecnologias Utilizadas
+Linguagem: Kotlin
+Ambiente de Desenvolvimento: Android Studio
+Design de Interface: XML e componentes nativos do Android
 
 ## :camera_flash: Screenshots
+<img src="https://github.com/user-attachments/assets/9453f6d3-72fb-484e-932e-aeb7e616d789" width = 260 />
+<img src="https://github.com/user-attachments/assets/bc0c3593-3d6f-4740-a204-200b30c736a9" width = 260 />
 <!-- You can add more screenshots here if you like -->
-Screenshots
+
+
 
 ## Tecnologias
-Techs
+- Activity
+- Intent
+- Snackbar
+- Viewgroups
+- LinearLayout
+- ConstraintLayout
+- Views
+- imageView
+- TextView
+- EditText
+- Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Ramon Ruan R. C. Mano
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
