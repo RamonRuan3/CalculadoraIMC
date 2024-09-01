@@ -1,5 +1,4 @@
 # Calculadora IMC
-Descrição
 Este é um aplicativo Android simples desenvolvido em Kotlin que calcula o Índice de Massa Corporal (IMC) com base na altura e peso fornecidos pelo usuário. O IMC é um indicador útil para avaliar se uma pessoa está em um peso saudável em relação à sua altura.
 
 ## Funcionalidades
